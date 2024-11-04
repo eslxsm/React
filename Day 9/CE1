@@ -1,0 +1,53 @@
+
+Home.jsx
+import React from 'react';
+const Home = () => {
+ return (
+ <div>
+ <h2>Welcome to Music World</h2>
+ </div>
+ );
+};
+export default Home;
+Album.jsx
+import React from 'react';
+const Album = () => {
+ return (
+ <div>
+ <h2>Albums</h2>
+ <ul>
+ <li>Album 1 by Singer 1</li>
+ <li>Album 2 by Singer 2</li>
+ </ul>
+ </div>
+ );
+};
+export default Album;
+Singer.jsx
+import React from 'react';
+const Singers = () => {
+ return (
+ <div>
+ <h2>Singers</h2>
+ <ul>
+ <li>Singer 1 (Year)</li>
+ <li>Singer 2 (Year)</li>
+ </ul>
+ </div>
+ );
+};
+export default Singers;
+Navbar.jsx
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './App.css';
+const NavBar = () => {
+ return (
+ <div className="navbar">
+ <Link to="/">Home</Link>
+ <Link to="/singers">Singers</Link>
+ <Link to="/albums">Albums</Link>
+ </div>
+ );
+};
+export default NavBar;
